@@ -1,10 +1,23 @@
 {
-  "name": "material-start",
+  "name": "volontario-admin",
   "private": true,
-  "version": "0.0.3",
-  "description": "A starter project for AngularJS Material",
-  "repository": "https://github.com/angular/material-start",
+  "version": "0.0.1",
+  "description": "Volontar.io administration",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volontario/volontario-admin.git"
+  },
+  "contributors": [
+    {
+      "name": "Oliver Vartiainen",
+      "email": "firoxer@gmail.com"
+    },
+    {
+      "name": "Jarkko Laaksonen",
+      "email": "jarkko@24rent.fi"
+    }
+  ],
   "devDependencies": {
     "karma": "~0.10",
     "protractor": "^2.0.0",
@@ -14,9 +27,15 @@
     "karma-junit-reporter": "^0.2.2",
     "selenium-webdriver": "^2.45.1"
   },
+  "main": "node main.js",
   "scripts": {
     "postinstall": "bower update",
     "prestart": "npm update",
+    "start": "node main.js",
     "test": "protractor ./e2e/protractor.conf.js"
+  },
+  "author": "",
+  "dependencies": {
+    "express": "^4.13.4"
   }
 }
